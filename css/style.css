@@ -1,0 +1,372 @@
+/***************************** Web Fonts ********************************/
+
+@import url(http://fonts.googleapis.com/css?family=Montaga);
+@import url(http://fonts.googleapis.com/css?family=Racing+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Asset);
+@import url(http://fonts.googleapis.com/css?family=Tienne:900);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:900);
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+@import url(http://fonts.googleapis.com/css?family=Share+Tech);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+/****************************** Fixes ***********************************/
+
+* {/* * = select all, fix for floating sections so everything can fit in all browsers as they are supposed to appear */ 
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+img, video, audio, iframe, form, table, figure { /* scale all media and images for responsive layout */
+	width: 100%;
+}
+
+/*.clearfix:after {fix for collasping parent when child is floated 
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}*/
+
+/**************************** Global **************************************/
+
+body {/* remember ../ get you out of the css file and then go into images */
+	/*background: url(../images/handmadepaper.png);*/
+}
+
+h2, h3 {
+	margin-bottom: 5px;
+}
+
+ul, ol {
+	margin-bottom: 10px;
+}
+
+li {
+	margin-left: 20px;
+}
+
+p, address {
+	margin: 0 0 25px;
+	font-size: 14px;
+}
+
+figure {
+	margin: 0 0 10px;
+}
+	figcaption {
+	font: normal 12px/1.5em 'Share Tech', sans-serif;
+	color: #777; /* 16 color names, hexadecimal, rgba */
+	text-align: left;
+	}
+
+/* Table */
+table {
+	width: 100%;
+	margin: 0 0 20px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc; 
+}
+
+
+	tr:nth-child(even) {
+		background-color: #efefef; 
+	}
+
+	tr, td {
+		padding: 10px;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+
+	th {
+		background: #555;
+		color: white;
+	}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;	
+}
+
+input[type="submit"] {
+	margin-top: 5px;
+	width: 100px;
+	background: black;
+	color: white;
+	border-radius: 25px;
+	border: 0;	
+}
+
+input[type="submit"]:hover {
+	background: #555;
+}
+
+iframe {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 353px;
+	width: 100%;
+}
+
+.border_right {
+	border-right: 1px dotted #96B5CC;
+	padding-right: 20px;
+}
+
+.shadow {
+	box-shadow: 0 3px 10px #333;
+}
+
+.nice_heading { /* selects elements with a class = to nice_heading */
+	font-family: 'Montaga', serif;
+	color: red;
+	text-shadow: 0 2px 3px #000;
+}
+
+
+/******************* Header ******************/
+
+header {
+	padding: 20px 0;
+	/*Gradient*/
+	background: rgb(252,205,77); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(252,205,77,1) 2%, rgba(252,234,187,1) 50%, rgba(251,223,147,1) 55%, rgba(247,208,101,1) 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(2%,rgba(252,205,77,1)), color-stop(50%,rgba(252,234,187,1)), color-stop(55%,rgba(251,223,147,1)), color-stop(98%,rgba(247,208,101,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(252,205,77,1) 2%,rgba(252,234,187,1) 50%,rgba(251,223,147,1) 55%,rgba(247,208,101,1) 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(252,205,77,1) 2%,rgba(252,234,187,1) 50%,rgba(251,223,147,1) 55%,rgba(247,208,101,1) 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(252,205,77,1) 2%,rgba(252,234,187,1) 50%,rgba(251,223,147,1) 55%,rgba(247,208,101,1) 98%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(252,205,77,1) 2%,rgba(252,234,187,1) 50%,rgba(251,223,147,1) 55%,rgba(247,208,101,1) 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fccd4d', endColorstr='#f7d065',GradientType=1 ); /* IE6-9 */
+
+}
+
+	/************************ Logo and Nav ****************/
+
+	.tagline {
+		text-align: center;
+		font: normal 20px/1.5em 'Quattrocento Sans', sans-serif;
+		color:#517FB0;
+		background-color: #FFFAC0;
+
+	}
+
+
+	nav {
+		padding-top: 13px;
+		width: 100%;
+		align-content: center;
+	}
+
+	#menu {
+		padding: 10px, 0;
+		width: 100%;
+		max-width: 960px;
+		right: 10px;
+	}
+
+
+		#menu nav a {
+			display: inline-block;
+			width: 15%;/* we want it to span 100% of the secper and broken up evenly so since we have 5 buttons 100/5 = 20% */
+			margin: 0 0 10px 0;
+			padding: 10px 0;
+			text-transform: uppercase;
+			background: white;
+			color: red;
+			border-radius: 45px;
+			text-align: center;
+			text-decoration: none;/* take away link highlight */
+			font: "Bitter", Arial, sans-serif;
+		}
+
+		#menu a.selected {
+			background: #75B8DE;
+			border-radius: 45px;
+			text-decoration: underline;
+			color: red;
+		}
+
+		#menu a:hover {
+			background: red;
+			color: white;
+			border-radius: 45px;
+		}
+
+	.container {
+		margin: auto;
+		width: 100%;
+		max-width: 960px;
+	}
+
+	hgroup {
+		left: 312px;
+		padding: 0px 5px;
+		width: 35%;
+		background: #354CE8;
+		color: white;
+		border-radius: 15px;
+		border: 0;
+		height: 110px;
+
+	}
+
+	hgroup h3 {
+		margin: 0;
+		font-style: bold;
+		padding: 0px 0px 0px 55px;
+		font-family: 'Playfair Display', serif;
+		position: relative;
+		bottom: -10px;
+		color: #FFEE3C;
+	}
+	
+	hgroup h1 { /* selects only <h1> inside ('the descendent of', 'the child of' ) the element id="logo"*/ 
+		margin: 0;
+		width: 100%;		
+		font-family: 'Asset', cursive;
+		font-size: 40px;
+		padding: 0 0 0 33px;
+
+	}
+
+	
+	hgroup h2 {
+		padding: 0px 0 0px 88px;
+		font-family: 'Tienne', serif;
+		font-size: 30px;
+		display: inline;
+		position: relative;
+		top: -15px;
+		color: #FFEE3C;
+	}
+
+
+
+/******************** Content *************************/
+
+#plaid {
+	background-image: url(../images/pattern.jpg);
+	background-position: left top;
+	background-repeat: repeat-x repeat-y;
+	padding: 20px 0;
+	/* CSS3 allows for multi images incase the image is too small for all your content*/
+}
+
+
+	/**************** Sections *****************/
+	
+	section {
+		display:inline-block;
+		padding: 20px;
+		background: #75B8DE;
+	}
+
+	section a {
+	color: red;
+	text-decoration: underline;
+	}
+
+	/* Positioning Classes */
+
+	.col1_left {/* positioning one column of three to the left*/
+		float: left;
+		width: 32.6%;/* 100% of the page - 2% (1% margin on both the left and right sides) = 98% then /3 columns = 32.6% */
+		margin: 0 0 20px;
+	}
+
+	.col1_mid {/* middle column thus margin */ 
+		float: left;
+		width: 32.6%;
+		margin: 0 1% 20px 1%;/* here's the -2% maring to get32.6% */
+	}
+
+	.col1_right {
+		float: right;
+		width: 32.6%;
+		margin: 0 0 20px;
+	}
+
+	.col2_left {/* positioning 2 columns */
+		float: left;
+		width: 66.4%;/* 100% - 1% margin (margin btw only 2 columns) = 99% then / 2 columns = 66,4% */
+		margin: 0 1% 20px 0;
+	}
+
+	.col2_right {
+		float: right;
+		width: 66.4%;
+		margin: 0 0 20px 1%;
+	}
+
+	.col3 {/* position takes up all 3 columns */
+		margin: 0 0 20px;
+	}
+
+
+/********************* Inventory ***********************/
+.beerlist li {
+	list-style: none;
+	float: left;
+	padding: 10px;
+} 
+
+.beerlist li:hover {
+	color: white;
+	background-color: black;
+}
+
+
+/********************* Details ***********************/
+
+#details {
+	clear: both;
+	padding: 20px 10px;
+	
+}
+
+	}#details a:link, #details a:visited  { /* selects links during their default state (un-touced) */ /* select links that have already been clicked (visted) */
+		color: black;
+		text-decoration: none;
+	}	
+
+	#details a:hover { /* select link during mouse hover */
+		color: black;
+		text-decoration: overline;
+	}
+
+	#details a:active {/* select links while the mouse button is depressed during the act of clicking */
+		color: red;
+		text-decoration: none;
+	}
+
+/********** Footer **********/
+
+footer {
+	text-align: center;
+	font-size: 10px;
+	color: #555;
+	padding: 10px 0 20px;
+}
+
+	footer a {
+		color: #555;
+		text-decoration: underline;
+	}
+
+/* code copyright Greg Goldberg 2013 */
+
+
+
+	
