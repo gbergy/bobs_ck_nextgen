@@ -1,40 +1,16 @@
 <!DOCtype html>
 	
-	<!--/////////////////// Ideas ////////////////////////////////-->
-	<!--	Local Forecast
-		
-		Suggest Beer section
+	<!--=======================Ideas ========================================
 		Wings Stop section
 		Office available section
-		Beer Advocate webpage
-		Google Maps
 		Beer of the Month
 		Youth sports sponsor?
 		Vote No to prop#?
-		Inventory Page 
 		http://lansdale.patch.com/
 		Yelp reviews http://www.yelp.com/biz/bobs-cases-and-kegs-montgomeryville
-
-		//////////////////////////// End Ideas ///////////////////////-->
-
-
-<!-- ============== Revisions ==================
-	1 take out red on buttons
-	2 move beer advocate
-	3 switch address info with picuture
-	4 add major credit cards
-	5 change lotto to lottery 
-	6 fix map to show actual location 
-	7 *my own* change beer menus to a collapsible menu via jquery
-	$(document).ready(function() {
-    $("#menu").accordion({collapsible: true, active: false});
-});
-http://www.codecademy.com/courses/web-beginner-en-jtFIC/1/1?curriculum_id=50a3fad8c7a770b5fd0007a1
-
-======================================= -->
+	=============================== End Ideas ===================================-->
 
 <html lang="en">
-	
 	<head>
 		<meta charset="utf-8">
 		<!-- head containts info for the web broswer not the viewer -->
@@ -43,6 +19,8 @@ http://www.codecademy.com/courses/web-beginner-en-jtFIC/1/1?curriculum_id=50a3fa
 		<meta name="keywords" content="beer, cases, kegs, philadelphia, alcohol, party, football, eagles, bob's cases and kegs, tailgate, game, superbowl, chips, nachos, tallboys, seasonal, hops, ale, lager, bock, malt, ipa, indian pale ale, stout, wheat, oats, pislner, bud, budlight, coors, corona, guinness, heineken, miller, phillies, baseball, hockey, flyers, lansdale, pennsylvania, penn, state, nittany, lions, basketball, wings, distributor">
 		<meta name="description" content="Proudly providing Bucks and Montgomery Counties with beer, soda, and snacks for over 20 years! Owned and operated by native local Bob Hillman.">
 		<title>Bob's Cases and Kegs Inc. - 20 years of service!</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="css/device_styles.css" type="text/css" media="screen">
@@ -54,122 +32,88 @@ http://www.codecademy.com/courses/web-beginner-en-jtFIC/1/1?curriculum_id=50a3fa
 		<![endif]-->
 	</head>
 	<body>
-		<!-- entire viewable section of the page, links, images and all types of media -->
-		
 		<!--/////////////////// Header //////////////////-->
 		<header>
 			
 			<!--//////////////// Logo and Menu Panel //////////// -->
 			
-			<div>
-				<div class="container">
-					<hgroup class="grid_4 alpha shadow">
-						<h3>BOB'S CASES &AMP; KEGS</h3>
-						<h1>BEER</h1>
-						<h2>&amp; SODA</h2>
-					</hgroup>
-				
-					<!--/////////// Menu Bar ///////-->
-
-					<div id="menu" class="clearfix">
-						<nav class="container">
-							<a class="selected" href="index.html">Home</a>&bull;
-							<a href="inventory-dom.html">Domestic</a>&bull;
-							<a href="inventory-imp.html">Imports</a>&bull;
-							<a href="inventory-craft.html">Craft Brews</a>
-							<a href="contact.html">Map</a>&bull;
-							<a href="http://www.philly.com/philly/sports/" target="blank">Philly Sports</a>&bull;
-							<a href="http://www.philly.com/philly/news/weather/" target="blank">Philly Weather</a>&bull;
-							<a href="http://www.beeradvocate.com" target="blank">Beer Advocate</a>
-							
-						</nav>
-					</div><!--#menu .clearfix-->
+			<div class="grid_12 clearfix" id="mainLogo">
+				<a href="index.html">
+				<img src="images/bcklogo.png" alt="Offical Bob's Cases and Kegs Logo"></a>
+			</div>	
 					
-					<div class="tagline">
-					Proudly Serving Bucks and Montegomery Counties for over 20 years!
-					<br>
-					For special requests, cases or kegs, please call 215-855-9191<br>
-					</div>		
-
-				</div><!-- End .container-->
-			</div><!--.logo--> 	
-			
-
-			
-		</header> <!--//////////////  End Logo & Menu Panel //////////-->	
+			<div id="tagline">	
+				Proudly Serving Bucks and Montgomery Counties for over 20 years<br>For special requests, cases or kegs, please call 215-855-9191
+			</div>
+		</header>
+		<!--/////////// Menu Bar ///////-->
+		<nav id="menu" class="clearfix">
+			<a class="selected" href="index.html">Home</a>
+			<a href="inventory-dom.html">Domestic</a>
+			<a href="inventory-imp.html">Imports</a>
+			<a href="inventory-craft.html">Craft Brews</a>
+			<a href="contact.html">Location</a>
+			<a href="http://www.philly.com/philly/sports/" target="blank">Philly Sports</a>
+			<a href="http://www.philly.com/philly/news/weather/" target="blank">Philly Weather</a>
+			<a href="http://beeradvocate.com/place/city/13/" target="blank">Beer Advocate</a>
+		</nav>
+		<!--//////////////  End Logo & Menu Panel //////////-->	
 		
 		<!--///////////////////////////// Main Content//////////////////////-->
-		
 		<div id="plaid"><!--start #plaid-->
-			
+
 			<div class="container clearfix">
 
 		        <!--/////////////////// Shop Picture //////////////////-->
-				<section class="col3 shadow clearfix">
+				<section class="col3 shadow">
 					<figure>
 						<img src="images/bckintro.jpg" title="Bob's got you covered" alt="Bob's Cases and Kegs Shop" style="width: 70%; height: 40%"/>
-					
-						<figcaption>Blue Shoes &copy; Larry Heyl 2007<br>Licensed with the the blahblahblah license</figcaption> 
+						<!--///////// Info Box ////////-->
+						<section class="grid_3">	
+							<div> 
+								<!-- Contact -->
+								<h3 class="nice_heading">Contact</h3>
+								<p>Phone: (215) 855-9191<br>
+								<a href="contact.html">Click for Directions!</a></p>
+								
+								<h3 class="nice_heading">Address</h3>
+								<address>Bob's Cases and Kegs<br>
+								408 Doylestown Pike,<br>
+								Montgomeryville, PA 18936
+								</address>
+								<!--End Contact -->
+
+								<!--Hours -->
+								<h3 class="nice_heading">Store Hours</h3>
+								<ul>
+									<li>Sunday: Noon - 5pm</li>
+									<li>Monday - Thursday: 9am - 8pm</li>
+									<li>Friday: 9am - 9pm</li>
+									<li>Saturday: 9am - 8pm</li>
+								</ul>
+								<!-- End Hours -->
+								<h3 class="nice_heading">Credit Cards Accepted</h3>
+								<img src="images/ccards.gif" title="Credit Cards" alt="All Major Credit Cards Available. MasterCard, Visa, Discover, American Express.">
+
+								<h3 class="nice_heading">Other items:</h3>
+									<ul class="other">
+										<li>Water</li>
+										<li>Ice</li>
+										<li>Soda</li>
+										<li>Snacks</li>
+										<li>Lottery</li>
+										<li>Cigars</li>
+										<li>CO<sub>2</sub> Refills</li>
+									</ul>
+							</div>
+						</section>		
+						<!--////////////////////// End Info Box //////////////-->
+						<figcaption>Bob's Cases and Kegs &copy; Greg Goldberg's iPhone 2014<br>All Rights Reserved</figcaption> 
 					</figure>
-				<!--/////////////////// End Shop Picture//////////////////-->
-						
-					<!--///////// Contact Box ////////-->
-					<section class="col3 shadow clearfix">	
-						<div id="details"> 
-							<h3 class="nice_heading">Contact</h3>
-							<p>Phone: (215) 855-9191<br>
-							<a href="contact.html">Click for Directions!</a></p>
-							<h3>Address</h3>
-							<address>Bob's Cases and Kegs<br>
-							408 Doylestown Pike,<br>
-							Montgomeryville, PA 18936<br>
-							'Merica</address>
-							<!--/div><  End Contact -->
-
-							<h3 class="nice_heading">Store Hours</h3>
-							<ul>
-								<li>Sunday: Noon - 5pm</li>
-								<li>Monday - Thursday: 9am - 8pm</li>
-								<li>Friday: 9am - 9pm</li>
-								<li>Saturday: 9am - 8pm</li>
-							</ul>
-							<!--/div><! End Hours -->
-						</div>
-					</section>		
-					<!--////////////////////// End Contact Box //////////////-->
-					<h3>Thanks Bob!</h3>
-					<p>At Bob's C&amp;K you'll find everything you need for the big game or just a family BBQ. Cases and Kegs of Domestic, Imported, and Craft Beer. As well as other items such as water, soda, cigars, snacks, and lotto tickets. Come on by and say 'hi' to the always friendly Bob!!!!</p>
-
-					<h4>Also stocked with other iteams such as:</h4>
-					<ul>
-						<li>Water</li><!-- Style with background: url() 0 0 no-repeat then list-style:none-->
-						<li>Ice</li>
-						<li>Soda</li>
-						<li>Snacks</li>
-						<li>Lotto</li>
-						<li>Cigars</li>
-					</ul>
-
+					<!--/////////////////// End Shop Picture//////////////////-->
 				</section>
-
-				
-				<!-- _blank is an attribute to open up a new broswer tab as opposed to the default _self which just changes the page you are looking at to a new one when you click the link -->
-
-				
-
-					
-				
-
-				
-
-				
-			
-			
 			</div><!--.container-->
-
-		</div><!--#wood-->
-
-		
+		</div><!--#plaid-->
 
 		<!--/////////////// Footer //////////////////-->
 		<footer>

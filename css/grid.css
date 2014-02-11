@@ -7,7 +7,7 @@
  */
 .grid_1 { width: 65px; }
 .grid_2 { width: 150px; }
-.grid_3 { width: 235px; }
+.grid_3 { width: 252px; }
 .grid_4 { width: 320px; }
 .grid_5 { width: 405px; }
 .grid_6 { width: 490px; }
@@ -40,7 +40,7 @@
 
 .container{
 	width: 1000px; 
-	margin: auto;
+	/* margin: auto; */
 }
 
 
