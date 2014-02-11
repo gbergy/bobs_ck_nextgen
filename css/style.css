@@ -18,7 +18,7 @@ img, video, audio, iframe, form, table, figure { /* scale all media and images f
 	width: 100%;
 }
 
-.clearfix:after {fix for collasping parent when child is floated 
+.clearfix:after { /*fix for collasping parent when child is floated*/ 
 	content: ".";
 	display: block;
 	clear: both;
@@ -103,7 +103,7 @@ header {
 	height: 190px;
 	background-image: url(../images/pattern.jpg);
 	background-position: left top;
-	background-repeat: repeat-x repeat-y;
+	background-repeat: repeat;
 	border-bottom: 2px solid #FFF;
 }
 
@@ -111,7 +111,6 @@ header {
 
 	#mainLogo {
 		margin: -13px 10px 18px 26px;
-		padding-top: -15px;
 		width: 300px;
 	}
 
@@ -166,6 +165,7 @@ header {
 /******************** Content *************************/
 
 #plaid {
+	padding: 10px 0;
 	/*gradient*/
 	background: rgb(235,241,246); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(137,195,235,1) 0%, rgba(117,184,222,1) 16%, rgba(245,247,160,1) 53%, rgba(117,184,222,1) 100%); /* FF3.6+ */
@@ -174,8 +174,7 @@ header {
 	background: -o-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(137,195,235,1) 0%,rgba(117,184,222,1) 16%,rgba(245,247,160,1) 53%,rgba(117,184,222,1) 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(137,195,235,1) 0%,rgba(117,184,222,1) 16%,rgba(245,247,160,1) 53%,rgba(117,184,222,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(137,195,235,1) 0%,rgba(117,184,222,1) 16%,rgba(245,247,160,1) 53%,rgba(117,184,222,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#75b8de',GradientType=0 ); /* IE6-9 */
-	padding: 10px 0;
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#75b8de',GradientType=0 );*/ /* IE6-9 */
 	/* CSS3 allows for multi images incase the image is too small for all your content*/
 }
 	/**************** Sections *****************/
