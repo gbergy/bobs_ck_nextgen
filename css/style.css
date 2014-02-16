@@ -155,6 +155,7 @@ header {
 	nav a:hover {
 		margin: auto;
 		background-color: rgba(143, 143, 143, 0.4);
+		border: 1px solid aliceblue;
 	}
 
 	.container {
