@@ -6,23 +6,22 @@
   }
 
   .beerlist li {
-	margin: 10px;
-	float: none;
-	padding: 9px;
-	width: 28%;
-	font-size: 10px;
-	background-color: white;
-	list-style-type: none;
+  	margin: 10px;
+  	float: none;
+  	padding: 9px;
+  	width: 28%;
+  	font-size: 12px;
+  	background-color: white;
+  	list-style-type: none;
   } 
 
   .beerlist li:hover {
-	color: black;
-	background-color: white;
+  	color: black;
+  	background-color: white;
   }
 
-   {
-  	text-align: none;
-
+  .titles {
+    text-align: left;
   }
 
 
