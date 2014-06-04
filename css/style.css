@@ -107,7 +107,7 @@ header {
 	border-bottom: 2px solid #FFF;
 }
 
-	/************************ Logo and Nav ****************/
+	/** Logo **/
 
 	#mainLogo {
 		margin: -13px 10px 18px 26px;
@@ -129,11 +129,18 @@ header {
 		border: 1px solid rgb(252,205,77);
 	}
 
+	/** Nav **/
+	
+	nav ul li {
+		display: inline;
+	}
+
 	nav {
-		margin-bottom: 7px;
+		margin: 0 50px 7px 50px;
 		display: inline-block;
-		margin-left: 170px;
 		height: 30px;
+		text-align: center;
+		width: 90%;
 	}
 
 	nav a {
@@ -155,15 +162,23 @@ header {
 	nav a:hover {
 		margin: auto;
 		background-color: rgba(143, 143, 143, 0.4);
-		border: 1px solid aliceblue;
+		border-radius: 18%;
 	}
 
-	.container {
-		margin: auto;
-		width: 100%;
-		max-width: 960px;
+	select {
+		width: 94%;
+		margin: 11px  0 11px 2%;
+		float: left;
+		display: inline;
 	}
+
 /******************** Content *************************/
+
+.container {
+	margin: auto;
+	width: 100%;
+	max-width: 960px;
+}
 
 #plaid {
 	padding: 10px 0;
