@@ -181,6 +181,7 @@ header {
 
 #plaid {
 	padding: 10px 0;
+	height: 100%;
 	/*gradient*/
 	background: rgb(235,241,246); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(137,195,235,1) 0%, rgba(117,184,222,1) 16%, rgba(245,247,160,1) 53%, rgba(117,184,222,1) 100%); /* FF3.6+ */
