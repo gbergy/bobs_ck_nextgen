@@ -185,11 +185,12 @@ header {
 	margin: auto;
 	width: 100%;
 	max-width: 960px;
-	padding-bottom: 30px;
+	
 }
 
-#plaid {
+#bgg {
 	padding: 10px;
+	padding-bottom: 30px;
 	height: 100%;
 	/*gradient*/
 	background: rgb(235,241,246); /* Old browsers */
@@ -202,7 +203,7 @@ header {
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#75b8de',GradientType=0 );*/ /* IE6-9 */
 	/* CSS3 allows for multi images incase the image is too small for all your content*/
 }
-	/**************** Sections *****************/
+	/*** Sections ***/
 	address {
 		font-style: normal;
 		font-size: 14px;
@@ -218,6 +219,10 @@ header {
 	section a {
 	color: red;
 	text-decoration: underline;
+	}
+
+	#gmap {
+		height: 406px;
 	}
 
 	/* Positioning Classes */
