@@ -30,6 +30,9 @@ img, video, audio, iframe, form, table, figure { /* scale all media and images f
 /**************************** Global **************************************/
 body {
 	background-color: #39454C;
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 h2, h3 {
@@ -87,6 +90,11 @@ iframe {
 	color: black;
 	text-decoration: underline;
 	margin: 10px 0;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
 }
 
 
@@ -177,10 +185,11 @@ header {
 	margin: auto;
 	width: 100%;
 	max-width: 960px;
+	padding-bottom: 30px;
 }
 
 #plaid {
-	padding: 10px 0;
+	padding: 10px;
 	height: 100%;
 	/*gradient*/
 	background: rgb(235,241,246); /* Old browsers */
@@ -276,9 +285,14 @@ header {
 footer {
 	text-align: center;
 	font-size: 10px;
+	height: 30px;
 	color: #555;
 	padding: 10px 0 20px;
 	background-color: #EEE;
+	position: absolute; 
+	bottom: 0; 
+	left: 0;
+	width: 100%;
 }
 
 	footer a {
