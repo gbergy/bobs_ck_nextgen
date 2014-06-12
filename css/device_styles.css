@@ -1,3 +1,4 @@
+/* iphone android*/
 @media (min-width: 320px) and (max-width: 568px) {
   #menu ul, 
   #tagline, 
@@ -25,10 +26,12 @@
   }
 }
 
-
-
 @media (min-width: 568px) {
   #menu select {
     display:none;
   }
+
+
 }
+
+

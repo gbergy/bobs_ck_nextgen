@@ -15,7 +15,7 @@
 }
 
 img, video, audio, iframe, form, table, figure { /* scale all media and images for responsive layout */
-	width: 100%;
+	 width: 100%;
 }
 
 .clearfix:after { /*fix for collasping parent when child is floated*/ 
@@ -194,16 +194,9 @@ header {
 	padding: 10px;
 	padding-bottom: 30px;
 	height: 100%;
-	/*gradient*/
-	background: rgb(235,241,246); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(137,195,235,1) 0%, rgba(117,184,222,1) 16%, rgba(245,247,160,1) 53%, rgba(117,184,222,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,241,246,1)), color-stop(0%,rgba(137,195,235,1)), color-stop(16%,rgba(117,184,222,1)), color-stop(53%,rgba(245,247,160,1)), color-stop(100%,rgba(117,184,222,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(137,195,235,1) 0%,rgba(117,184,222,1) 16%,rgba(245,247,160,1) 53%,rgba(117,184,222,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(137,195,235,1) 0%,rgba(117,184,222,1) 16%,rgba(245,247,160,1) 53%,rgba(117,184,222,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(137,195,235,1) 0%,rgba(117,184,222,1) 16%,rgba(245,247,160,1) 53%,rgba(117,184,222,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(137,195,235,1) 0%,rgba(117,184,222,1) 16%,rgba(245,247,160,1) 53%,rgba(117,184,222,1) 100%); /* W3C */
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#75b8de',GradientType=0 );*/ /* IE6-9 */
-	/* CSS3 allows for multi images incase the image is too small for all your content*/
+	background-image: url(../images/pattern.jpg);
+	background-position: left top;
+	background-repeat: repeat;
 }
 	/*** Sections ***/
 	address {
@@ -227,11 +220,16 @@ header {
 		height: 406px;
 	}
 
+	.creditcards {
+		width: 75%;
+		/* height: 25%; */
+	}
+
 	/* Positioning Classes */
 
 	.col1_left {/* positioning one column of three to the left*/
 		float: left;
-		width: 32.6%;/* 100% of the page - 2% (1% margin on both the left and right sides) = 98% then /3 columns = 32.6% */
+		/* width: 32.6%; *//* 100% of the page - 2% (1% margin on both the left and right sides) = 98% then /3 columns = 32.6% */
 		margin: 0 0 20px;
 	}
 
